@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+@font-face {
+    font-family: "tangosans";
+    src: url(Font/tangosans/TangoSans.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(Images/bg1.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.topbar{
+    margin-left: 80%;
+    width: 20%;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.topbar ul li{
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+
+}
+.topbar ul li a{
+    text-decoration:  none;
+    color: #fff;
+}
+.topbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.topbar ul li:hover::after{
+    width: 100%;
+}
+.about {
+    margin: 1%;
+	background-color: rgb(19, 8, 1);
+	border-radius: 20px;
+	height: 76%;
+	position: relative;
+	padding: 2%;
+	color: #444;
+	cursor: pointer;
+    display: block;
+}
+.Me{
+    color: #fff;
+    min-width: 75%;
+    position: relative;
+    display: inline;
+}
+
+.wrapper{
+	width: 1000px;
+	margin: 30px auto;
+}
+
+.tabs ul{
+	display: flex;
+	background: rgb(19, 8, 1);
+	border: 1px solid rgb(19, 8, 1);
+	border-radius: 15px;
+	margin-bottom: 25px;
+}
+
+.tabs ul li{
+	width: 250px;
+	padding: 15px;
+    list-style: none;
+	border-right: 1px solid #dddddd;
+	text-align: center;
+	color: #fefafa;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	position: relative;
+}
+
+.tabs ul li:last-child{
+	border-right: 0px;
+}
+
+.tabs ul li:before{
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #8e9c98;
+	opacity: 0;
+	transition: all 0.2s ease;
+}
+
+.tabs ul li:hover,
+.tabs ul li.active{
+
+	background: #444;
+	color: #fff;
+}
+
+.tabs ul li:hover:before,
+.tabs ul li.active:before{
+	opacity: 1;
+}
+
+.content{
+	background: rgb(19, 8, 1);
+	border-radius: 25px;
+	padding: 15px;
+    height: 400px;
+}
+
+.tab_wrap .title{
+    color: #fff;
+	font-size: 20px;
+	margin-bottom: 15px;
+	font-weight: 600;
+	font: tangosans;
+	font-size: 50px;
+	padding-left: 2%;
+}
+
+.tab_wrap .tab_content p{
+    color:#fff;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.pictab{
+	justify-content: center;
+	align-items: center;
+	padding-top: 8%;
+	padding-left: 4%;
+}
+.pic{
+	object-fit: none;
+	position: relative;
+	height: 250px;
+	width: 300px;
+	display: inline;
+}
+.educ{
+	font: tangosans;
+	border-spacing: 0;
+	color: #fff;
+	width: 100;
+	height: 250px;
+    text-align: center;
+	border-collapse: separate;
+}
+.educdat{
+	width: 300px;
+	border-spacing: 20px 0;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+.me{
+	font-size: 20px;
+	justify-content: end;
+	margin: 20px;
+}
+.hobby{
+	margin: 25px;
+	color: #fff;
+}
+.hobbylist{
+	margin: 25px;
+	color: #fff;
+	font-size:  25px;
+	
+}
+.contact{
+font-size: 30px;
+  margin: 25px;
+}
+img[alt~="telephone"]{
+	width: 15px;
+	height: auto;
+	margin-left: 30px;
+}
+img[alt~="email"]{
+	margin-left: 30px;
+	width: 20px;
+	height: auto;
+}
+.cont{
+	display: inline;
+	font-size: 20px;
+	margin-left: 10px;
+}
